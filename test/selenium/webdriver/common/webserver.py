@@ -135,6 +135,7 @@ def main(argv=None):
     if argv is None:
         import sys
         argv = sys.argv
+
     parser = OptionParser("%prog [options]")
     parser.add_option("-p", "--port", dest="port", type="int",
                       help="port to listen (default: %s)" % DEFAULT_PORT,
