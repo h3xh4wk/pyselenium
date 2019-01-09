@@ -213,7 +213,7 @@ def server(request):
 
 @pytest.fixture(autouse=True, scope='session')
 def webserver():
-    webserver = SimpleWebServer(host=get_lan_ip())
+    webserver = SimpleWebServer(host="127.0.0.1")
     webserver.start()
     yield webserver
     webserver.stop()

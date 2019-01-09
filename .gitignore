@@ -1,0 +1,8 @@
+__pycache__/
+build.desc
+geckodriver.log
+tox.ini
+*.pyc
+dist/
+
+selenium.egg-info/
