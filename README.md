@@ -3,7 +3,7 @@ Python Bindings for Selenium
 
 Setup
 ---------
-Clone the repository from This Link
+Install Python in your OS and Clone/Download this repository on your local drive.
 
 Ensure that apprpriate driver such as chromedriver and geckodriver are in
 user's `PATH`. You can download the drivers from the below mentioned links:-
