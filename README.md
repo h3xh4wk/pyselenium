@@ -1,6 +1,6 @@
 Python Bindings for Selenium
 ====================================
-
+Python bindings have been extracted from the selenium project hosted at https://github.com/SeleniumHQ/selenium
 Setup
 ---------
 Install Python in your OS and Clone/Download this repository on your local drive.
