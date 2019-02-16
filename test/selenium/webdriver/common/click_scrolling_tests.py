@@ -74,6 +74,10 @@ def testShouldBeAbleToClickOnAnElementHiddenByYOverflow(driver, pages):
 
     driver.find_element(By.ID, "link").click()
     WebDriverWait(driver, 3).until(EC.title_is("Clicked Successfully!"))
+    driver.back()
+    driver.find_element(By.ID, "link1").click()
+    WebDriverWait(driver, 3).until(EC.title_is("Clicked Successfully!"))
+
 
 
 def testShouldNotScrollOverflowElementsWhichAreVisible(driver, pages):
