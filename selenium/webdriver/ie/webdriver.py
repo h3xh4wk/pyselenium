@@ -14,7 +14,6 @@
 # KIND, either express or implied.  See the License for the
 # specific language governing permissions and limitations
 # under the License.
-from selenium.webdriver.common import utils
 from selenium.webdriver.remote.webdriver import WebDriver as RemoteWebDriver
 from .service import Service
 from .options import Options
@@ -51,8 +50,6 @@ class WebDriver(RemoteWebDriver):
          - keep_alive - Whether to configure RemoteConnection to use HTTP keep-alive.
         """
         self.port = port
-        if self.port == 0:
-            self.port = utils.free_port()
         self.host = host
 
         # If both capabilities and desired capabilities are set, ignore desired capabilities.
